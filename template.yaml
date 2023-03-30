@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  nvprovisirikinesisconsumertestjs:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: nvprovi_siri_kinesis_consumer_hacon
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: >-
+        arn:aws:iam::292742715921:role/service-role/nvprovi_siri_kinesis_consumer_test_js-role-0ijfoh5r
+      Runtime: nodejs14.x
+      Timeout: 3
